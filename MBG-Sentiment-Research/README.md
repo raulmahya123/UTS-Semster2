@@ -17,3 +17,11 @@ Bagian 13–17 notebook menambahkan RandomizedSearchCV dengan 24 kandidat per al
 Hasil tambahan disimpan terpisah di `outputs/optimization/`. `tables/validation_before_after.csv` membandingkan validasi konfigurasi awal dan baru; `reports/selection_locked.json` mencatat pilihan sebelum audit test; `models/best_pipeline_optimized.joblib` berisi pipeline pilihan lanjutan. Konfigurasi awal tetap dipertahankan bila skor validasinya lebih baik.
 
 Test yang sama sudah digunakan pada studi awal, sehingga evaluasi lanjutan diberi status eksploratif. Dibutuhkan data baru yang belum dilihat untuk konfirmasi independen. Menaikkan budget tuning tidak menjamin kenaikan performa.
+
+## Target accuracy di atas 70%
+
+Bagian 18–26 menambahkan eksperimen yang memilih parameter berdasarkan accuracy. Bagian awal berbasis macro F1 tetap disimpan sebagai riwayat. Jalankan sel import bagian 1 lalu bagian 18–26 bila ingin mengulang hanya eksperimen accuracy dengan file split/historis yang sudah tersedia. Run All tetap menjalankan seluruh penelitian.
+
+Hasil akhir accuracy ada di `outputs/accuracy_optimization/final/tables/final_accuracy.csv`, laporan di `outputs/accuracy_optimization/final/reports/final_accuracy_summary.md`, dan tiga pipeline di `outputs/accuracy_optimization/final/models/`. Hasil fase awal/refinement tidak ditimpa.
+
+KNN dan MultinomialNB dapat memakai proyeksi SVD–LDA dan/atau diskretisasi sebagai varian ekstraksi fitur. Cantumkan varian yang dipakai di metodologi; perbandingan pipeline yang memakai fitur berbeda tidak mengisolasi pengaruh classifier saja. Semua transformasi terawasi dilatih hanya di fold training. Accuracy dan recall positif harus dibaca bersama. Test lama tetap bersifat eksploratif karena telah dipakai sebelumnya.

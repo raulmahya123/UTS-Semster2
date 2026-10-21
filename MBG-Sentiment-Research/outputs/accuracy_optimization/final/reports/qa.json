@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "criterion": "accuracy",
+  "same_split": true,
+  "fixed_seed": 42,
+  "all_validation_above_70": true,
+  "all_test_above_70": true,
+  "test_status": "previously exposed; exploratory only",
+  "model_reload_matches_predictions": true,
+  "source_py_files": 0,
+  "standalone_model_reload": "PASS",
+  "predictions_match_original_test_comments": "PASS",
+  "all_metrics_recomputed": "PASS",
+  "split_identity_check": "PASS",
+  "classifier_types_verified": true,
+  "dataset_sha256": "87f63cd9006d082832343721d08fc9951ae690757bf49cda62ba7db4fea8a5ce",
+  "test_rows": 728
+}

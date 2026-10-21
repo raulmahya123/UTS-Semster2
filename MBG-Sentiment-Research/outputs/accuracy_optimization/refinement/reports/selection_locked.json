@@ -1,0 +1,25 @@
+{
+  "criterion": "validation accuracy; CV accuracy and macro F1 tie-break",
+  "test_status": "previously exposed; exploratory only",
+  "target": "strictly greater than 0.70",
+  "models": [
+    {
+      "Model": "SVM",
+      "Varian": "Ronde pertama: Accuracy Randomized",
+      "accuracy": 0.8074277854195323,
+      "cv_accuracy": 0.814856569395389
+    },
+    {
+      "Model": "Naive Bayes",
+      "Varian": "Refinement NB_projected",
+      "accuracy": 0.797799174690509,
+      "cv_accuracy": 0.7859679990963633
+    },
+    {
+      "Model": "KNN",
+      "Varian": "Refinement KNN",
+      "accuracy": 0.7097661623108665,
+      "cv_accuracy": 0.7152041219735773
+    }
+  ]
+}

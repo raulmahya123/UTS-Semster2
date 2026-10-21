@@ -1,0 +1,4 @@
+Model,Varian,validation_accuracy
+SVM,Ronde pertama: Accuracy Randomized,0.8074277854195323
+KNN,KNN proyeksi bersama SVD-LDA,0.8074277854195323
+Naive Bayes,Refinement NB_projected,0.797799174690509

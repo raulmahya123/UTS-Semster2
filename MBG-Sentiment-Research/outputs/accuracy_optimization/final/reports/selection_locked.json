@@ -1,0 +1,21 @@
+{
+  "criterion": "validation accuracy",
+  "test_status": "previously exposed; exploratory only",
+  "models": [
+    {
+      "Model": "SVM",
+      "Varian": "Ronde pertama: Accuracy Randomized",
+      "validation_accuracy": 0.8074277854195323
+    },
+    {
+      "Model": "KNN",
+      "Varian": "KNN proyeksi bersama SVD-LDA",
+      "validation_accuracy": 0.8074277854195323
+    },
+    {
+      "Model": "Naive Bayes",
+      "Varian": "Refinement NB_projected",
+      "validation_accuracy": 0.797799174690509
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+Model,Classifier,Validation accuracy,Test accuracy,Test rows,Reload cocok,Validation >70%,Test >70%
+SVM,LinearSVC,0.8074277854195323,0.8269230769230769,728,True,True,True
+KNN,KNeighborsClassifier,0.8074277854195323,0.8228021978021978,728,True,True,True
+Naive Bayes,MultinomialNB,0.797799174690509,0.7925824175824175,728,True,True,True

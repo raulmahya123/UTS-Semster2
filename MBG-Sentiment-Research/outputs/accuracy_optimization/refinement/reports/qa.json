@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "criterion": "accuracy",
+  "refinement_candidates": 96,
+  "refinement_cv_fits": 480,
+  "all_validation_above_70": true,
+  "all_test_above_70": true,
+  "test_status": "previously exposed; exploratory only",
+  "selection_before_this_test_audit": true,
+  "model_reload_matches_predictions": true,
+  "classifier_types": {
+    "SVM": "LinearSVC",
+    "Naive Bayes": "MultinomialNB",
+    "KNN": "KNeighborsClassifier"
+  }
+}
