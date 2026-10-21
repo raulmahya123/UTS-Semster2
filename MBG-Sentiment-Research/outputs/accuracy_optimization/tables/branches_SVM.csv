@@ -1,0 +1,2 @@
+Model,Branch,cv_accuracy,cv_std,cv_f1_macro,seconds
+SVM,Randomized,0.814856569395389,0.01188372276988534,0.6733327424305648,88.22808719999739

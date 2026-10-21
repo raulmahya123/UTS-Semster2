@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "executed_code_cells": 11,
+  "tracebacks": 0,
+  "embedded_figures": 15,
+  "saved_figures": 15,
+  "csv_tables": 31,
+  "source_py_files": 0,
+  "dataset_copy_identical": true,
+  "leakage_checks": "PASS",
+  "independent_metric_checks": "PASS",
+  "fresh_process_model_reload": "PASS",
+  "preprocessing_sample_parity": "PASS",
+  "winner": "SVM",
+  "test_accuracy": 0.7403846153846154,
+  "test_macro_f1": 0.6640938574724653,
+  "demo_prediction": [
+    "negatif"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "winner": "SVM",
+  "phase": "Awal",
+  "validation_macro_f1": 0.6618782177510403,
+  "criterion": "validation macro F1, CV tie-break",
+  "test_status": "previously exposed; exploratory audit only",
+  "n_iter": 24,
+  "seed": 42,
+  "params": {
+    "model__C": 0.1,
+    "model__class_weight": "balanced",
+    "preprocess__kw_args": {
+      "stem": true
+    },
+    "tfidf__ngram_range": [
+      1,
+      1
+    ]
+  }
+}

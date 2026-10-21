@@ -1,0 +1,29 @@
+{
+  "criterion": "validation accuracy; CV accuracy and macro F1 tie-break",
+  "seed": 42,
+  "target": "strictly greater than 0.70",
+  "test_status": "previously exposed; exploratory only",
+  "models": [
+    {
+      "Model": "SVM",
+      "Varian": "Accuracy Randomized",
+      "accuracy": 0.8074277854195323,
+      "cv_accuracy": 0.814856569395389,
+      "parameters": "{\"features\": \"TfidfVectorizer(analyzer='char_wb', max_features=20000, min_df=2,\\n                ngram_range=(3, 5), sublinear_tf=True)\", \"model__C\": 3.6996924957729944, \"model__class_weight\": null, \"preprocess__kw_args\": {\"mode\": \"keep_stopwords\"}, \"select__k\": 3000}"
+    },
+    {
+      "Model": "KNN",
+      "Varian": "Accuracy SVD",
+      "accuracy": 0.7001375515818432,
+      "cv_accuracy": 0.7031171121856278,
+      "parameters": "{\"select__k\": 3000, \"reduce\": \"TruncatedSVD(n_components=128, random_state=42)\", \"preprocess__kw_args\": {\"mode\": \"keep_stopwords\"}, \"normalize\": \"Normalizer()\", \"model__weights\": \"distance\", \"model__n_neighbors\": 5, \"model__metric\": \"euclidean\", \"features\": \"TfidfVectorizer(analyzer='char_wb', max_features=20000, min_df=2,\\n                ngram_range=(3, 5), sublinear_tf=True)\"}"
+    },
+    {
+      "Model": "Naive Bayes",
+      "Varian": "Accuracy Randomized",
+      "accuracy": 0.672627235213205,
+      "cv_accuracy": 0.6491773864915003,
+      "parameters": "{\"features\": \"TfidfVectorizer(analyzer='char_wb', max_features=20000, min_df=2,\\n                ngram_range=(3, 5), sublinear_tf=True)\", \"model__alpha\": 0.03578792453502322, \"model__fit_prior\": true, \"preprocess__kw_args\": {\"mode\": \"stemmed\"}, \"select__k\": \"all\"}"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+Model,kelas,recall,f1-score
+KNN,positif,0.2,0.26666666666666666
+Naive Bayes,positif,0.1,0.15384615384615385
+SVM,positif,0.575,0.4842105263157895

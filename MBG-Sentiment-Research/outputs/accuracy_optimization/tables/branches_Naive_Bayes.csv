@@ -1,0 +1,2 @@
+Model,Branch,cv_accuracy,cv_std,cv_f1_macro,seconds
+Naive Bayes,Randomized,0.6491773864915003,0.015610539938233666,0.5094742935999792,55.658287300000666

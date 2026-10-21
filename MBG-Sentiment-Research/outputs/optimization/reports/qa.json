@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "n_iter_per_model": 24,
+  "cv_folds": 5,
+  "total_additional_cv_fits": 360,
+  "validation_selected_model": "SVM",
+  "selected_phase": "Awal",
+  "validation_macro_f1": 0.6618782177510403,
+  "validation_delta": 0.0,
+  "test_status": "previously exposed; exploratory only",
+  "same_split": true,
+  "model_reload_matches_predictions": true,
+  "figures": 6,
+  "tables": 19,
+  "fresh_kernel_model_reload": "PASS",
+  "all_saved_test_metrics_recomputed": "PASS",
+  "split_leakage_check": "PASS",
+  "source_py_files": 0
+}

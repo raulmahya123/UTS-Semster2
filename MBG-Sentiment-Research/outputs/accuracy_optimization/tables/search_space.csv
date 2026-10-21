@@ -1,0 +1,40 @@
+Model/varian,Parameter,Pilihan
+SVM,preprocess__kw_args,"[{'mode': 'normalized'}, {'mode': 'stemmed'}, {'mode': 'keep_stopwords'}]"
+SVM,select__k,"['all', 300, 1000, 3000]"
+SVM,features,"[TfidfVectorizer(max_features=15000, sublinear_tf=True), TfidfVectorizer(max_features=20000, ngram_range=(1, 2), sublinear_tf=True), TfidfVectorizer(analyzer='char_wb', max_features=20000, min_df=2,
+                ngram_range=(3, 5), sublinear_tf=True)]"
+SVM,model__C,"loguniform(0.005,20)"
+SVM,model__class_weight,"[None, 'balanced']"
+Naive Bayes,preprocess__kw_args,"[{'mode': 'normalized'}, {'mode': 'stemmed'}, {'mode': 'keep_stopwords'}]"
+Naive Bayes,select__k,"['all', 300, 1000, 3000]"
+Naive Bayes,features,"[CountVectorizer(max_features=20000, min_df=2), CountVectorizer(max_features=20000, min_df=2, ngram_range=(1, 2)), CountVectorizer(binary=True, max_features=20000, min_df=2, ngram_range=(1, 2)), TfidfVectorizer(max_features=15000, sublinear_tf=True), TfidfVectorizer(max_features=20000, ngram_range=(1, 2), sublinear_tf=True), TfidfVectorizer(analyzer='char_wb', max_features=20000, min_df=2,
+                ngram_range=(3, 5), sublinear_tf=True)]"
+Naive Bayes,model__alpha,"loguniform(0.0001,10)"
+Naive Bayes,model__fit_prior,"[True, False]"
+KNN Sparse,preprocess__kw_args,"[{'mode': 'normalized'}, {'mode': 'stemmed'}, {'mode': 'keep_stopwords'}]"
+KNN Sparse,select__k,"['all', 300, 1000, 3000]"
+KNN Sparse,features,"[TfidfVectorizer(max_features=15000, sublinear_tf=True), TfidfVectorizer(max_features=20000, ngram_range=(1, 2), sublinear_tf=True), TfidfVectorizer(analyzer='char_wb', max_features=20000, min_df=2,
+                ngram_range=(3, 5), sublinear_tf=True)]"
+KNN Sparse,model__n_neighbors,"[1, 3, 5, 7, 11, 21, 41, 81]"
+KNN Sparse,model__weights,"['uniform', 'distance']"
+KNN Sparse,model__metric,"['cosine', 'euclidean']"
+KNN Sparse,normalize,[Normalizer()]
+KNN SVD,preprocess__kw_args,"[{'mode': 'normalized'}, {'mode': 'stemmed'}, {'mode': 'keep_stopwords'}]"
+KNN SVD,select__k,"['all', 1000, 3000]"
+KNN SVD,features,"[TfidfVectorizer(max_features=15000, sublinear_tf=True), TfidfVectorizer(max_features=20000, ngram_range=(1, 2), sublinear_tf=True), TfidfVectorizer(analyzer='char_wb', max_features=20000, min_df=2,
+                ngram_range=(3, 5), sublinear_tf=True)]"
+KNN SVD,model__n_neighbors,"[1, 3, 5, 7, 11, 21, 41, 81]"
+KNN SVD,model__weights,"['uniform', 'distance']"
+KNN SVD,model__metric,"['cosine', 'euclidean']"
+KNN SVD,reduce,"[TruncatedSVD(n_components=32, random_state=42), TruncatedSVD(n_components=64, random_state=42), TruncatedSVD(n_components=128, random_state=42), TruncatedSVD(n_components=256, random_state=42)]"
+KNN SVD,normalize,[Normalizer()]
+KNN SVD_LDA,preprocess__kw_args,"[{'mode': 'normalized'}, {'mode': 'stemmed'}, {'mode': 'keep_stopwords'}]"
+KNN SVD_LDA,select__k,"['all', 1000, 3000]"
+KNN SVD_LDA,features,"[TfidfVectorizer(max_features=15000, sublinear_tf=True), TfidfVectorizer(max_features=20000, ngram_range=(1, 2), sublinear_tf=True), TfidfVectorizer(analyzer='char_wb', max_features=20000, min_df=2,
+                ngram_range=(3, 5), sublinear_tf=True)]"
+KNN SVD_LDA,model__n_neighbors,"[1, 3, 5, 7, 11, 21, 41, 81]"
+KNN SVD_LDA,model__weights,"['uniform', 'distance']"
+KNN SVD_LDA,model__metric,"['cosine', 'euclidean']"
+KNN SVD_LDA,reduce,"[TruncatedSVD(n_components=32, random_state=42), TruncatedSVD(n_components=64, random_state=42), TruncatedSVD(n_components=128, random_state=42)]"
+KNN SVD_LDA,projection,"[LinearDiscriminantAnalysis(n_components=2, shrinkage='auto', solver='eigen')]"
+KNN SVD_LDA,normalize,"['passthrough', Normalizer()]"

@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "criterion": "accuracy",
+  "cv_folds": 5,
+  "new_candidates": 96,
+  "new_cv_fits": 480,
+  "validation_all_above_70": false,
+  "test_all_above_70": false,
+  "test_status": "previously exposed; exploratory only",
+  "same_split": true,
+  "source_identity_check": true,
+  "leakage_identity_check": true,
+  "reload_matches_predictions": true,
+  "classifier_types": {
+    "SVM": "LinearSVC",
+    "KNN": "KNeighborsClassifier",
+    "Naive Bayes": "MultinomialNB"
+  },
+  "tables": 23,
+  "figures": 5
+}

@@ -1,0 +1,6 @@
+Tahapan,Jumlah data,Data dihapus
+Dataset awal,4968,0
+Setelah missing value,4968,0
+Setelah penanganan duplikat mentah dan konflik,4889,79
+Setelah teks kosong preprocessing,4876,13
+Dataset siap olah,4847,29

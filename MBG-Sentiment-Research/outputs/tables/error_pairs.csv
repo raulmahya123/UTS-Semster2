@@ -1,0 +1,18 @@
+Model,Label Aktual,Prediksi,Jumlah
+KNN,negatif,netral,188
+Naive Bayes,netral,negatif,147
+KNN,netral,negatif,82
+SVM,netral,negatif,70
+SVM,negatif,netral,70
+Naive Bayes,negatif,netral,65
+SVM,netral,positif,28
+Naive Bayes,positif,netral,27
+KNN,positif,netral,25
+SVM,positif,netral,14
+Naive Bayes,positif,negatif,9
+KNN,netral,positif,9
+Naive Bayes,netral,positif,8
+KNN,positif,negatif,7
+SVM,negatif,positif,4
+KNN,negatif,positif,3
+SVM,positif,negatif,3

@@ -1,0 +1,22 @@
+{
+  "dataset_rows": 4968,
+  "prepared_rows": 4847,
+  "split_sizes": {
+    "Training": 3392,
+    "Validation": 727,
+    "Testing": 728
+  },
+  "folds": 5,
+  "winner": "SVM",
+  "no_identity_overlap": true,
+  "models_trained": [
+    "SVM",
+    "KNN",
+    "Naive Bayes"
+  ],
+  "model_reload_prediction": [
+    "negatif"
+  ],
+  "figure_count": 15,
+  "artifact_count": 52
+}

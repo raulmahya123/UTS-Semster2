@@ -1,0 +1,15 @@
+{
+  "winner": "SVM",
+  "criterion": "validation macro F1; CV tie-break",
+  "params": {
+    "model__C": 0.1,
+    "model__class_weight": "balanced",
+    "preprocess__kw_args": {
+      "stem": true
+    },
+    "tfidf__ngram_range": [
+      1,
+      1
+    ]
+  }
+}
